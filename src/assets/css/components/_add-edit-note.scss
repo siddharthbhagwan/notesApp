@@ -1,0 +1,32 @@
+/* aeNote = addEditNode */
+.aen-Header {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.modal-body {
+  min-height: 500px;
+}
+
+.modal-footer {
+  background-color: rgb(250, 250, 250);
+}
+
+.aen-btn-save {
+  background-color: rgb(106, 196, 203);
+  padding: 10px;
+  color: white;
+}
+
+.aen-btn-cancel {
+  background-color: rgb(210, 211, 212);
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+
+.aen-Color {
+  background-color: rgb(278, 170, 177);
+  height: 5px;
+}

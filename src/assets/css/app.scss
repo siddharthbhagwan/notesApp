@@ -1,0 +1,177 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'components/program.scss';
+
+/* #toDo: split files into main, dn, aen and bootstrap */
+
+/* app.css */
+
+.main {
+  padding: 30px 80px;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  color: rgb(102, 135, 147);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgb(217, 217, 217);
+  font-style: italic;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(217, 217, 217);
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgb(217, 217, 217);
+  font-style: italic;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(217, 217, 217);
+  font-style: italic;
+}
+
+/* aeNote = addEditNode */
+.aen-header {
+  border-bottom: 1px solid #dddddd;
+  padding: 15px;
+  background-color: black;
+}
+
+.aen-title {
+  color: rgb(102, 135, 147);
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.aen-body:focus {
+  outline: none;
+}
+
+#deleteNote,
+#saveNote,
+.add-note-btn {
+  background-color: rgb(106, 196, 203);
+  padding: 10px;
+  color: white;
+}
+
+#cancelDelete,
+#cancelNote {
+  background-color: rgb(210, 211, 212);
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+
+.aen-color {
+  background-color: rgb(278, 170, 177);
+  height: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.aen-container {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+span[id^='aen-color-'] {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 3px;
+}
+
+.aen-color-palette {
+  padding: 10px;
+}
+
+#aen-color-1 {
+  background-color: #ffaab1;
+}
+#aen-color-2 {
+  background-color: #b7ebd2;
+}
+#aen-color-3 {
+  background-color: #fadab1;
+}
+#aen-color-4 {
+  background-color: #b3cdff;
+}
+
+/* Bootstrap overrides */
+.aen-modal-body {
+  padding: none;
+  height: 450px;
+}
+
+#del-modal {
+  color: rgb(102, 135, 147);
+}
+
+.modal-footer {
+  background-color: rgb(250, 250, 250);
+}
+
+/* dn = displayNote */
+.dn-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.dn-color {
+  background-color: rgb(278, 170, 177);
+  height: 5px;
+}
+
+.dn-header {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(102, 135, 147);
+}
+
+.dn-title {
+  padding-right: 5px;
+}
+
+.dn-body {
+  padding: 10px;
+  color: rgb(102, 135, 147);
+  white-space: pre;
+  overflow-y: hidden;
+}
+
+.dn-tools {
+  padding: 0 20px;
+  float: right;
+}
+
+/* Font Awesome */
+
+.fa {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: rgb(106, 196, 203);
+}
